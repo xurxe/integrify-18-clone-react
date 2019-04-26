@@ -4,7 +4,7 @@ Our [second assignment at Integrify](https://github.com/xurxe/Integrify-02-clone
 
 ## Demo
 
-Coming soon
+https://xurxe.github.io/integrify-18-clone-react/
 
 ## Author
 
