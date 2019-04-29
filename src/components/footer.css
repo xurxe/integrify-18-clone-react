@@ -16,6 +16,7 @@ footer p {
     line-height: var(--long-length);
     margin: 0;
     padding:0;
+    text-transform: uppercase;
 }
 
 .social-media-div {

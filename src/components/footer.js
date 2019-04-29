@@ -1,36 +1,21 @@
 import React from "react";
+import Parser from "html-react-parser"
+
 import "./footer.css";
+import data from "../data";
+
 import SocialMediaA from "./social-media-a";
 
-const Footer = (props) => (
+const Footer = () => (
     <footer>
-        <p className="smaller">COPYRIGHT &copy; 2003-2012 VENTUS INC. ALL RIGHTS RESERVED.</p>
+        <p>
+            {Parser(data.footer.copyright)}
+        </p>
 
         <div className="social-media-div">
-            <SocialMediaA href="https://twitter.com/">
-                <i className="fab fa-twitter-square"></i>
-            </SocialMediaA>
-
-            <SocialMediaA href="https://facebook.com/">
-                <i className="fab fa-facebook-square"></i>
-            </SocialMediaA>
-
-            <SocialMediaA href="https://vimeo.com/">
-                <i className="fab fa-vimeo-square"></i>
-            </SocialMediaA>
-
-            <SocialMediaA href="https://youtube.com/">
-                <i className="fab fa-youtube-square"></i>
-            </SocialMediaA>
-
-            <SocialMediaA href="https://plus.google.com/">
-                <i className="fab fa-google-plus-square"></i>
-            </SocialMediaA>
-
-            <SocialMediaA href="https://pinterest.com/">
-                <i className="fab fa-pinterest-square"></i>
-            </SocialMediaA>
-        
+            {data.footer.socialMedia.map(
+                (item) => <SocialMediaA key={item.name} data={item}></SocialMediaA>)
+            }
         </div>
     </footer>
 );

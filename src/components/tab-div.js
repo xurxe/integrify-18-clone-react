@@ -1,6 +1,9 @@
-import React from "react"
-import "./tab-div.css"
-import BlueButton from "./blue-button"
+import React from "react";
+
+import "./tab-div.css";
+import data from "../data";
+
+import BlueButton from "./blue-button";
 
 export default (props) => (
     <div className="tab">
@@ -16,7 +19,7 @@ export default (props) => (
             <p>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni."
             </p>
-            <BlueButton text="Learn more"></BlueButton>
+            <BlueButton data={data.header.button}></BlueButton> {/* fix */}
         </div>
     </div>
     

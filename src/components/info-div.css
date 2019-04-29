@@ -11,12 +11,13 @@
 
 #info-div h5 {
     color: white;
+    margin-bottom: var(--short-length);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -o-font-smoothing: antialiased;
-    margin-bottom: var(--short-length);
+    text-transform: uppercase;
 }
 
 #info-div hr {

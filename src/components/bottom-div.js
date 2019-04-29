@@ -1,13 +1,16 @@
 import React from "react";
+import Parser from "html-react-parser";
+
 import "./bottom-div.css";
+
 import WhiteButton from "./white-button";
 
-const BottomDiv = () => (
+const BottomDiv = ({data}) => (
     <div id="bottom-div">
         <h2>
-            Get in touch with us <em>now!</em>
+            {Parser(data.title)}
         </h2>
-        <WhiteButton text="Contact us"></WhiteButton>
+        <WhiteButton data={data.button}></WhiteButton>
     </div>
 )
 

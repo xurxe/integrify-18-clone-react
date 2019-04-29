@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./main.css";
 import data from "../data"
 
@@ -11,21 +12,9 @@ import TabsDiv from "./tabs-div";
 const Main = () => (
     <main>
         <div id="mainA" className="content1">
-            <FeatureDiv title1="Superbly" title2="responsive">
-                <i className="fas fa-mobile-alt"></i>
-            </FeatureDiv>
-
-            <FeatureDiv title1="Squeeky" title2="clean">
-                <i className="fas fa-desktop"></i>
-            </FeatureDiv>
-
-            <FeatureDiv title1="Multi" title2="purpose">
-                <i className="fas fa-laptop"></i>
-            </FeatureDiv>
-
-            <FeatureDiv title1="Highly" title2="flexible">
-                <i className="fas fa-recycle"></i>
-            </FeatureDiv>
+            {data.section1.content.map(
+                (item) => <FeatureDiv key={item.key} data={item}></FeatureDiv>)
+            }
         </div>
 
         <div id="mainB" className="title2">
@@ -34,15 +23,9 @@ const Main = () => (
 
         <div id="mainC">
             <div className="content2">
-                <BlogDiv title="Blogitty">
-                </BlogDiv>
-
-                <BlogDiv title="Blogus">
-                </BlogDiv>
-
-                <BlogDiv title="Blogarino">
-                </BlogDiv>
-
+                {data.section2.content.map(
+                    (item) => <BlogDiv key={item.key} data={item}></BlogDiv>)
+                }
             </div>
 
             <div className="title3">
@@ -50,17 +33,9 @@ const Main = () => (
             </div>
 
             <div className="content3">
-                <TestimonialDiv name="Jane Doe">
-                </TestimonialDiv>
-
-                <TestimonialDiv name="Fulano de Tal">
-                </TestimonialDiv>
-
-                <TestimonialDiv name="Maija Meikäläinen">
-                </TestimonialDiv>
-
-                <TestimonialDiv name="Nisse i Hökarängen">
-                </TestimonialDiv>
+                {data.section3.content.map(
+                    (item) => <TestimonialDiv key={item.key} data={item}></TestimonialDiv>)
+                }
             </div>
 
             <div className="title4">

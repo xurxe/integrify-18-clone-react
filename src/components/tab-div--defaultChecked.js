@@ -1,5 +1,8 @@
 import React from "react";
+
 import "./tab-div.css";
+import data from "../data";
+
 import BlueButton from "./blue-button";
 
 const TabDivDefaultChecked = (props) => (
@@ -16,7 +19,7 @@ const TabDivDefaultChecked = (props) => (
             <p>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni."
             </p>
-            <BlueButton text="Learn more"></BlueButton>
+            <BlueButton data={data.header.button}></BlueButton> {/* fix */}
         </div>
     </div>
 );

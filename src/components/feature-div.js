@@ -1,20 +1,27 @@
 import React from "react";
+import Parser from "html-react-parser"
+
 import "./feature-div.css";
+
 import ReadMoreButton from "./read-more-button";
 
-const FeatureDiv = (props) => (
+const FeatureDiv = ({data}) => (
     <div className="feature-div">
         <div className="icon-div">
-            <div className="circle-div">
-                {props.children}
+            <div className="circle-div"> 
+                {Parser(data.img)} 
             </div>
         </div>
 
-        <h3><b>{props.title1}</b> {props.title2}</h3>
+        <h3> 
+            {Parser(data.title)}
+        </h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ullam vel consequuntur accusantium, asperiores.</p>
+        <p>
+            {data.content}
+        </p>
 
-        <ReadMoreButton></ReadMoreButton>
+        <ReadMoreButton data={data.button}></ReadMoreButton>
     </div>
 );
 

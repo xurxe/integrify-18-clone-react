@@ -1,9 +1,10 @@
 import React from "react";
+
 import "./white-button.css";
 
-const WhiteButton = (props) => (
-    <a href="/" className="white-button">
-        {props.text}
+const WhiteButton = ({data}) => (
+    <a href={data.url} className="white-button">
+        {data.text}
     </a>
 );
 

@@ -1,13 +1,15 @@
 import React from "react";
+import Parser from "html-react-parser";
+
 import "./top-div.css";
 import WhiteButton from "./white-button";
 
-const TopDiv = () => (
+const TopDiv = ({data}) => (
     <div id="top-div">
         <h2>
-            Create a <em>powerful</em> solution now!
+            {Parser(data.title)}
         </h2>
-        <WhiteButton text="Get Started"></WhiteButton>
+        <WhiteButton data={data.button}></WhiteButton>
     </div>
 );
 

@@ -1,22 +1,24 @@
 import React from "react";
 import Parser from "html-react-parser";
 
+import "./header.css";
 import data from "../data";
 
-import "./header.css";
 import BlueButton from "./blue-button";
+
+const {img, alt, title, subtitle, button} = data.header;
 
 const Header = () => (
     <header>
         <div className="header-image-div">
-            <img src={'header-img.png'} alt="" />
+            <img src={img} alt={alt} />
         </div>
         <div className="header-text-div">
-            <h1>{Parser(data.header.title)}</h1>
+            <h1>{Parser(title)}</h1>
 
-            <p>{Parser(data.header.subtitle)}</p>
+            <p>{Parser(subtitle)}</p>
 
-            <BlueButton text="Learn more"></BlueButton>
+            <BlueButton data={button}></BlueButton>
         </div>
     </header>
 );

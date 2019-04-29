@@ -9,6 +9,7 @@
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -o-font-smoothing: antialiased;
+    text-transform: uppercase;
     padding: 1rem;
     height: var(--medium-length);
 }

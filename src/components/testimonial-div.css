@@ -5,7 +5,7 @@
     box-shadow: 1rem 0 4rem -2rem; 
 }
 
-.testimonial::after {
+.testimonial-div::after {
     border-right: 2.5rem solid transparent;
     border-top: 2.5rem solid white;
     bottom: -2.5rem;
@@ -17,6 +17,6 @@
     z-index: 10;
 }
 
-.testimonial p {
+.testimonial-div p {
     font-style: italic;
 }

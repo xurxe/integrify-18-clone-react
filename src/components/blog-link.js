@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./blog-link.css";
 
 const BlogLink = ({data}) => (
@@ -6,7 +7,7 @@ const BlogLink = ({data}) => (
         <a href={data.url} className="blog-link">
             {data.title}
         </a>
-
+        
         <hr />
     </div>
 );

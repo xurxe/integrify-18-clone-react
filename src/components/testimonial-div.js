@@ -1,11 +1,13 @@
 import React from "react";
 import "./testimonial-div.css";
 
-const TestimonialDiv = (props) => (
+const TestimonialDiv = ({data}) => (
     <div className="testimonial-div">
-        <h5>{props.name}</h5>
+        <h5>
+            {data.name}
+        </h5>
         <p>
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores natus, sunt excepturi placeat maxime autem voluptatibus necessitatibus exercitationem."
+            &ldquo;{data.content}&rdquo;
         </p>
     </div>
 );
