@@ -5,6 +5,7 @@ import BlogDiv from "./blog-div";
 import TestimonialDiv from "./testimonial-div";
 import TitleDiv from "./title-div";
 import TabsDiv from "./tabs-div";
+import data from "../data/data"
 
 const Main = () => (
     <main>
@@ -26,7 +27,7 @@ const Main = () => (
             </FeatureDiv>
         </div>
 
-        <div id="mainB" className="title2">
+        <div id="mainB" className={data.section2.title}>
             <TitleDiv title="Recent work"></TitleDiv>
         </div>
 
