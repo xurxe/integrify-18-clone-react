@@ -1,0 +1,77 @@
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas: 
+        "mainA"
+        "mainB"
+        "mainC";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+#mainA {
+    grid-area: mainA;
+    margin-top: calc(var(--longer-length) - var(--shorter-length));
+}
+
+.content1 {
+    display: grid;
+    grid-column-gap: var(--short-length);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#mainB {
+    grid-area: mainB;
+    margin-top: var(--longer-length);
+}
+
+#mainC {
+    display: grid;
+    grid-area: mainC;
+    grid-column-gap: var(--short-length);
+    grid-template-areas: 
+        "content2 content2 content2"
+        "title3 title3 title4"
+        "content3 content3 content4";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.content2 {
+    display: grid;
+    grid-area: content2;
+    grid-column-gap: var(--short-length);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: var(--longer-length);
+    margin-top: var(--medium-length);
+    width: 100%;
+}
+
+.title3 {
+    grid-area: title3;
+}
+
+.content3 {
+    display: grid;
+    grid-area: content3;
+    grid-column-gap: var(--short-length);
+    grid-row-gap: calc(3*var(--short-length));
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: var(--medium-length);
+    width: 100%;
+}
+
+.title4 {
+    grid-area: title4;
+}
+
+.content4 {    
+    grid-area: content4;
+    height: 100%;
+    margin-top: var(--medium-length);
+    height: calc(100% - var(--medium-length));
+}

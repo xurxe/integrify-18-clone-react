@@ -1,0 +1,9 @@
+.social-media-a .fab {
+    color: var(--darkest-grey);
+    font-size: 2.5rem;
+    margin-left: calc(0.5*var(--short-length));
+}
+
+.social-media-a .fab:hover {
+    color: var(--lightest-grey);
+}

@@ -1,0 +1,35 @@
+footer {
+    align-items: center;
+    color: var(--light-grey);
+    display: flex;
+    flex-flow: row nowrap;
+    grid-area: footer;
+    height: var(--longer-length);
+    justify-content: space-between;
+}
+
+footer div {
+    width: auto;
+}
+
+footer p {
+    line-height: var(--long-length);
+    margin: 0;
+    padding:0;
+}
+
+.social-media-div {
+    height: auto;
+    margin-bottom: var(--short-length);
+    margin-top: var(--short-length);
+}
+
+.fab {
+    color: var(--darkest-grey);
+    font-size: 2.5rem;
+    margin-left: calc(0.5*var(--short-length));
+}
+
+.fab:hover, .fas:hover {
+    color: var(--lightest-grey);
+}

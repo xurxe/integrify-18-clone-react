@@ -1,0 +1,7 @@
+.blog-link {
+    color: var(--lighter-grey);
+}
+
+.blog-link:hover {
+    color: var(--blue);
+}

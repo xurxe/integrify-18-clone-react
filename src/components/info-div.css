@@ -1,0 +1,34 @@
+#info-div {
+    display: grid;
+    color: var(--light-grey);
+    grid-area: info;
+    grid-column-gap: var(--short-length);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: var(--short-length);
+    padding-top: var(--long-length);
+}
+
+#info-div h5 {
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+    margin-bottom: var(--short-length);
+}
+
+#info-div hr {
+    border: 1px solid var(--darker-grey);
+    margin: 0.6rem 0;
+}
+
+.flickr-image-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat (4, autofill);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 7px;
+    width: 100%
+}

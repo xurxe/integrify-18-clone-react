@@ -1,0 +1,5 @@
+.flickr-image-div {
+    background-color:var(--darkest-grey);
+    height: 50px;
+    width: 50px;
+}

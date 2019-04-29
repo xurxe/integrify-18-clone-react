@@ -1,0 +1,22 @@
+.testimonial-div {
+    background: white;
+    padding: var(--short-length);
+    position: relative;
+    box-shadow: 1rem 0 4rem -2rem; 
+}
+
+.testimonial::after {
+    border-right: 2.5rem solid transparent;
+    border-top: 2.5rem solid white;
+    bottom: -2.5rem;
+    content:"";
+    height: 0;
+    left:0;
+    position: absolute;
+    width: 0;
+    z-index: 10;
+}
+
+.testimonial p {
+    font-style: italic;
+}

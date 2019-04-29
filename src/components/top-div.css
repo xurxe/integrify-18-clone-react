@@ -1,0 +1,24 @@
+#top-div {
+    align-items: center;
+    background: var(--blue);
+    border-radius: 2px 2px 0 0;
+    display: flex;
+    grid-area: top;
+    height: var(--longer-length);
+    justify-content: space-between;
+    line-height: var(--longer-length);
+    padding-left: 50px;
+    padding-right: 2rem;
+    position: relative;
+}
+
+#top:after {
+    border-right: 3.5rem solid transparent;
+    border-top: 3.5rem solid var(--blue);
+    bottom: -3.5rem;
+    content:"";
+    height: 0;
+    left:0;
+    position: absolute;
+    width: 0;
+}

@@ -1,0 +1,27 @@
+#bottom-div {
+    align-items: center;
+    background: var(--blue);
+    border-radius: 2px 2px 0 0;
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    justify-content: space-between;
+    font-size: 1.452rem;
+    height: var(--long-length);
+    line-height: var(--long-length);
+    margin-top: var(--longer-length);
+    padding-left: 55px;
+    padding-right: 1rem;
+    position: relative;
+}
+
+#bottom-div::after {
+    border-right: 3rem solid transparent;
+    border-top: 3rem solid var(--blue);
+    bottom: -3rem;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}

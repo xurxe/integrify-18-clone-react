@@ -1,0 +1,14 @@
+.read-more-button {    
+    background: linear-gradient(var(--blue-gradient));
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+    padding: 1rem;
+    height: var(--medium-length);
+}

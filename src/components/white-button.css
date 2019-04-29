@@ -1,0 +1,11 @@
+.white-button {
+    color: var(--dark-grey);
+    background: linear-gradient(var(--white-gradient));
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    height: var(--medium-length);
+    line-height: var(--medium-length);
+    padding: 0 3rem 0;
+    text-transform: uppercase;
+}
