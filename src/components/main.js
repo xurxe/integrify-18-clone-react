@@ -1,11 +1,12 @@
 import React from "react";
 import "./main.css";
+import data from "../data"
+
 import FeatureDiv from "./feature-div";
 import BlogDiv from "./blog-div";
 import TestimonialDiv from "./testimonial-div";
 import TitleDiv from "./title-div";
 import TabsDiv from "./tabs-div";
-import data from "../data/data"
 
 const Main = () => (
     <main>
@@ -27,8 +28,8 @@ const Main = () => (
             </FeatureDiv>
         </div>
 
-        <div id="mainB" className={data.section2.title}>
-            <TitleDiv title="Recent work"></TitleDiv>
+        <div id="mainB" className="title2">
+            <TitleDiv title={data.section2.title}></TitleDiv>
         </div>
 
         <div id="mainC">
@@ -45,8 +46,7 @@ const Main = () => (
             </div>
 
             <div className="title3">
-                <TitleDiv title="Testimonials">
-                </TitleDiv>
+                <TitleDiv title={data.section3.title}></TitleDiv>
             </div>
 
             <div className="content3">
@@ -64,7 +64,7 @@ const Main = () => (
             </div>
 
             <div className="title4">
-                <TitleDiv title="Development">
+                <TitleDiv title={data.section4.title}>
                 </TitleDiv>
             </div>
             

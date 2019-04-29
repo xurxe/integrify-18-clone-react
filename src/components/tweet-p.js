@@ -1,15 +1,13 @@
 import React from "react";
+import Parser from "html-react-parser";
+
 import "./tweet-p.css";
 
-const TweetP = (props) => (
+const TweetP = ({data}) => (
     <p className="tweet-p">
-        <b>{props.username} </b> 
-        {props.text} 
-        <b> {props.hashtag}</b> 
+        <b>{data.username} </b> {Parser(data.content)} 
         <br /> 
-        <span className="smaller-italic">about 
-            <b> {props.time}</b>
-        </span>
+        <span className="smaller-italic">about <b> {data.timestamp}</b></span>
     </p>
 );
 

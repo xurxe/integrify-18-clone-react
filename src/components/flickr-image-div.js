@@ -1,8 +1,10 @@
 import React from "react";
 import "./flickr-image-div.css";
 
-const FlickrImage = (props) => (
-    <div className="flickr-image-div"></div>
+const FlickrImageDiv = ({data}) => (
+    <div className="flickr-image-div">
+        <img src={data.src} alt={data.alt}/>
+    </div>
 );
 
-export default FlickrImage;
+export default FlickrImageDiv;

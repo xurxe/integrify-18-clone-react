@@ -1,4 +1,8 @@
 import React from "react";
+import Parser from "html-react-parser";
+
+import data from "../data";
+
 import "./header.css";
 import BlueButton from "./blue-button";
 
@@ -8,15 +12,9 @@ const Header = () => (
             <img src={'header-img.png'} alt="" />
         </div>
         <div className="header-text-div">
-            <h1>
-                <em>Powerfully simple</em>&#8196;with a <br />
-                <em>squeeky clean</em>&#8196;design.
-            </h1>
+            <h1>{Parser(data.header.title)}</h1>
 
-            <p>
-                Find out how you can offer quick and powerful <br />
-                solutions to your customers now!
-            </p>
+            <p>{Parser(data.header.subtitle)}</p>
 
             <BlueButton text="Learn more"></BlueButton>
         </div>

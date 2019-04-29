@@ -1,8 +1,8 @@
 let data = {
     header: {
         img: "",
-        title: "Powerfully simple with a squeeky clean design",
-        subtitle: "Find out how you can offer quick and powerful solutions to your customers now!",
+        title: "<em>Powerfully simple</em>&#8196;with a <br /> <em>squeeky clean</em>&#8196;design.",
+        subtitle: "Find out how you can offer quick and powerful <br /> solutions to your customers now!",
         button: {
             text: "Learn more",
             url: "/",
@@ -17,7 +17,7 @@ let data = {
         },
     },
 
-    content1: {
+    section1: {
         title: "Features",
         content: [
             {
@@ -115,84 +115,104 @@ let data = {
         },
     },
 
-    info: {
-        aboutUs: {
-            title: "About us",
-            content: {
-                description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores non praesentium quasi. Quae, quod.",
-                address: "123 Street Name <br /> Road Name <br /> London <br /> +44 7419 13807"
+    aboutUs: {
+        title: "About us",
+        content: {
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores non praesentium quasi. Quae, quod.",
+            address: "123 Street Name <br /> Road Name <br /> London <br /> +44 7419 13807"
+        },
+    },
+
+    latestTweets: {
+        title: "Latest tweets",
+        content: [
+            {
+                key: 0,
+                username: "@Jainesh",
+                content: "Just submitted another great item on <b>#themeforest</b>",
+                timestamp: "3 hours ago",
+                url: "/",
             },
-        },
+            {
+                key: 1,
+                username: "@Jainesh",
+                content: "Working on an awesome theme for <b>#themeforest</b>",
+                timestamp: "3 weeks ago",
+                url: "/",
+            },
+        ],
+    },
 
-        latestTweets: {
-            title: "Latest tweets",
-            content: [
-                {
-                    user: "@Jainesh",
-                    content: "Just submitted another great item on #themeforest",
-                    timeStamp: "about 3 hours ago",
-                    url: "/",
-                },
-                {
-                    user: "@Jainesh",
-                    content: "Working on an awesome theme for #themeforest",
-                    timeStamp: "about 3 weeks ago",
-                    url: "/",
-                },
-            ],
-        },
-
-        latestPosts: {
-            title: "Latest posts",
-            content: [
-                {
-                    title: "Lorem ipsum dolor sit amet, consect",
-                    url: "/",
-                },
-                {
-                    title: "Sea do elusmad tempor incididunt!",
-                    url: "/",
-                },
-                {
-                    title: "Ut labore et dolare magnar sea do elusmad tempor",
-                    url: "/",
-                },
-                {
-                    title: "Consectetur incididunt elt, sea do?",
-                    url: "/",
-                },
-            ],
-        },
-        
-        flickr: {
-            title: "Flickr",
-            content: [
-                {
-                    img: ""
-                },
-                {
-                    img: ""
-                },
-                {
-                    img: ""
-                },
-                {
-                    img: ""
-                },
-                {
-                    img: ""
-                },
-                {
-                    img: ""
-                },
-                {
-                    img: ""
-                },
-                {
-                    img: ""
-                },
-            ],
-        },
+    latestPosts: {
+        title: "Latest posts",
+        content: [
+            {
+                key: 0,
+                title: "Lorem ipsum dolor sit amet, consect",
+                url: "/",
+            },
+            {
+                key: 1,
+                title: "Sea do elusmad tempor incididunt!",
+                url: "/",
+            },
+            {
+                key: 2,
+                title: "Ut labore et dolare magnar sea do elusmad tempor",
+                url: "/",
+            },
+            {
+                key: 3,
+                title: "Consectetur incididunt elt, sea do?",
+                url: "/",
+            },
+        ],
+    },
+    
+    flickr: {
+        title: "Flickr",
+        content: [
+            {
+                key: 0,
+                img: "",
+                alt: "",
+            },
+            {
+                key: 1,
+                img: "",
+                alt: "",
+            },
+            {
+                key: 2,
+                img: "",
+                alt: "",
+            },
+            {
+                key: 3,
+                img: "",
+                alt: "",
+            },
+            {
+                key: 4,
+                img: "",
+                alt: "",
+            },
+            {
+                key: 5,
+                img: "",
+                alt: "",
+            },
+            {
+                key: 6,
+                img: "",
+                alt: "",
+            },
+            {
+                key: 7,
+                img: "",
+                alt: "",
+            },
+        ],
     },
 
     footer: {
