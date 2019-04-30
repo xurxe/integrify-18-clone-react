@@ -31,10 +31,12 @@ const TabDivTabs = ({items}) => (
 
 const TabDivContent = ({item}) => (
     <div className={"tab-div-content " + item.key + ' ' + item.class}>
-        <h5>
-            {item.title}
-        </h5>
-        {Parser(item.content)}
+        <div>
+            <h5>
+                {item.title}
+            </h5>
+            {Parser(item.content)}
+        </div>
         
         <BlueButton item={data.header.button}></BlueButton> {/* fix */}
     </div>

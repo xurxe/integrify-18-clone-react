@@ -20,6 +20,7 @@
     outline: none;
     padding: var(--short-length);
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .tab-div-content {
@@ -33,5 +34,13 @@
 }
 
 .tab-div-content.selected {
-    display: block;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.tab-div-content a {
+    align-self: flex-end;
 }

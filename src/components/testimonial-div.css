@@ -3,6 +3,7 @@
     padding: var(--short-length);
     position: relative;
     box-shadow: 1rem 0 4rem -2rem; 
+    z-index: 10;
 }
 
 .testimonial-div::after {
