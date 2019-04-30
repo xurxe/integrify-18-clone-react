@@ -6,6 +6,7 @@ const TestimonialDiv = ({item}) => (
         <h5>
             {item.name}
         </h5>
+        
         <p>
             &ldquo;{item.content}&rdquo;
         </p>

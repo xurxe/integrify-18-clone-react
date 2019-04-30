@@ -126,7 +126,7 @@ let data = {
             {
                 key: 0,
                 tab: 'Design',
-                class: 'selected',
+                class: 'active',
                 title: 'The Design',
                 content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quibusdam veritatis expedita, eum temporibus inventore voluptatibus sint praesentium?</p> <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni."</p>',
             },
@@ -283,6 +283,6 @@ let data = {
             },
         ],
     },
-}
+};
 
 export default data;

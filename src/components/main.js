@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./main.css";
-import data from "../data"
+import data from "../data";
 
 import FeatureDiv from "./feature-div";
 import BlogDiv from "./blog-div";
@@ -13,8 +13,8 @@ const Main = () => (
     <main>
         <div id="mainA" className="content1">
             {data.section1.content.map(
-                (item) => <FeatureDiv key={item.key} item={item}></FeatureDiv>)
-            }
+                (item) => <FeatureDiv key={item.key} item={item}></FeatureDiv>
+            )}
         </div>
 
         <div id="mainB" className="title2">
@@ -24,8 +24,8 @@ const Main = () => (
         <div id="mainC">
             <div className="content2">
                 {data.section2.content.map(
-                    (item) => <BlogDiv key={item.key} item={item}></BlogDiv>)
-                }
+                    (item) => <BlogDiv key={item.key} item={item}></BlogDiv>
+                )}
             </div>
 
             <div className="title3">
@@ -34,13 +34,12 @@ const Main = () => (
 
             <div className="content3">
                 {data.section3.content.map(
-                    (item) => <TestimonialDiv key={item.key} item={item}></TestimonialDiv>)
-                }
+                    (item) => <TestimonialDiv key={item.key} item={item}></TestimonialDiv>
+                )}
             </div>
 
             <div className="title4">
-                <TitleDiv title={data.section4.title}>
-                </TitleDiv>
+                <TitleDiv title={data.section4.title}></TitleDiv>
             </div>
             
             <div className="content4">

@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./layout-div.css";
-import data from "../data"
 
 import Header from "./header";
 import TopDiv from "./top-div";
@@ -17,12 +16,12 @@ const LayoutDiv = () => (
         <div className="grey-darker-background"></div>
 
         <Header></Header>
-        <TopDiv item={data.top}></TopDiv>
+        <TopDiv></TopDiv>
         <div className="stripe-background"></div>
 
         <Main></Main>
 
-        <BottomDiv item={data.bottom}></BottomDiv>
+        <BottomDiv></BottomDiv>
         <InfoDiv></InfoDiv>
         <Footer></Footer>
     </div>

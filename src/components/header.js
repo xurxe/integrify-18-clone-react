@@ -14,9 +14,13 @@ const Header = () => (
             <img src={img} alt={alt} />
         </div>
         <div className="header-text-div">
-            <h1>{Parser(title)}</h1>
+            <h1>
+                {Parser(title)}
+            </h1>
 
-            <p>{Parser(subtitle)}</p>
+            <p>
+                {Parser(subtitle)}
+            </p>
 
             <BlueButton item={button}></BlueButton>
         </div>

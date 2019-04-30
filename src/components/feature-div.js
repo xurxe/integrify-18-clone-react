@@ -1,5 +1,5 @@
 import React from "react";
-import Parser from "html-react-parser"
+import Parser from "html-react-parser";
 
 import "./feature-div.css";
 

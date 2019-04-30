@@ -5,9 +5,19 @@ import "./tweet-p.css";
 
 const TweetP = ({item}) => (
     <p className="tweet-p">
-        <b>{item.username} </b> {Parser(item.content)} 
+        <b>
+            {item.username}
+        </b>
+        
+        {Parser(item.content)} 
+
         <br /> 
-        <span className="smaller-italic">about <b> {item.timestamp}</b></span>
+        <span className="smaller-italic">
+            about
+            <b>
+                {item.timestamp}
+            </b>
+        </span>
     </p>
 );
 

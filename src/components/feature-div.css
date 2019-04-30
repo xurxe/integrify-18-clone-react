@@ -8,10 +8,6 @@
     position: relative;
 }
 
-.feature-div p {
-    text-align: center;
-}
-
 .feature-div:hover {
     background-color: white;
     box-shadow: 2rem 0 8rem -4rem; 
@@ -44,6 +40,10 @@
     color: white; 
     font-size: 2rem;
     line-height: 80px;
+}
+
+.feature-div p {
+    text-align: center;
 }
 
 .feature-div:hover a {

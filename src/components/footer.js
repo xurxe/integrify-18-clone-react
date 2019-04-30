@@ -1,5 +1,5 @@
 import React from "react";
-import Parser from "html-react-parser"
+import Parser from "html-react-parser";
 
 import "./footer.css";
 import data from "../data";
@@ -14,8 +14,8 @@ const Footer = () => (
 
         <div className="social-media-div">
             {data.footer.socialMedia.map(
-                (item) => <SocialMediaA key={item.name} item={item}></SocialMediaA>)
-            }
+                (item) => <SocialMediaA key={item.name} item={item}></SocialMediaA>
+            )}
         </div>
     </footer>
 );
