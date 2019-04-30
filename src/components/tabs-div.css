@@ -1,6 +1,37 @@
 .tabs-div
 {
-    position: relative;
-    clear: both;
     height: 100%;
+}
+
+.tab-div {
+    background-color: white;
+    box-shadow: 2rem 0 8rem -4rem; 
+    height: calc(100% - 2 * var(--short-length) - 1rem - 1px);
+    padding: var(--short-length);
+    z-index: 10;
+}
+
+.tab-div-tab {
+    background-color: var(--lightest-grey);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    padding: var(--short-length);
+    text-transform: uppercase;
+}
+
+.tab-div-content {
+    display: none;
+}
+
+.tab-div-tab.selected {
+    background-color: white;
+    box-shadow: 2rem 0 8rem -4rem; 
+    z-index: 10;
+}
+
+.tab-div-content.selected {
+    display: block;
 }
