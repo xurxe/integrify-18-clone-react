@@ -1,9 +1,9 @@
 import React from "react";
 import "./flickr-image-div.css";
 
-const FlickrImageDiv = ({data}) => (
+const FlickrImageDiv = ({item}) => (
     <div className="flickr-image-div">
-        <img src={data.src} alt={data.alt}/>
+        <img src={item.src} alt={item.alt}/>
     </div>
 );
 

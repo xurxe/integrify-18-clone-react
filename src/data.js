@@ -1,6 +1,6 @@
 let data = {
     header: {
-        img: '',
+        img: 'header-img.png',
         alt: '',
         title: '<em>Powerfully simple</em>&#8196;with a <br /> <em>squeeky clean</em>&#8196;design.',
         subtitle: 'Find out how you can offer quick and powerful <br /> solutions to your customers now!',
@@ -110,7 +110,7 @@ let data = {
             {
                 key: 2,
                 name: 'Maija Meikäläinen',
-                content: 'Aenean id nulla gravida, tincidunt turpis nec, fringilla felis. Aenean sed hendrerit libero, et ornare tellus. Quisque sed dui libero morbi.',
+                content: 'Aenean id nulla gravida, tincidunt turpis nec, fringilla felis. Aenean sed hendrerit libero, et ornare tellus. Quisque sed dui libero morbi non aenan scelerisque aliquet.',
             },
             {
                 key: 3,
@@ -122,19 +122,20 @@ let data = {
 
     section4: {
         title: 'Development',
-        content: {
-            tab1: {
+        content: [
+            {
+                key: 0,
                 tab: 'Design',
                 title: 'The Design',
-                content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quibusdam veritatis expedita, eum temporibus inventore voluptatibus sint praesentium?</p> <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni."</p>'
+                content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quibusdam veritatis expedita, eum temporibus inventore voluptatibus sint praesentium?</p> <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni."</p>',
             },
-        
-            tab2: {
+            {
+                key: 1,
                 tab: 'Production',
                 title: 'The Production',
-                content: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem quisquam, ea pariatur dolores vel ipsa veritatis accusantium iure corrupti nihil nostrum quae maiores nobis?</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni.</p>'
+                content: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem quisquam, ea pariatur dolores vel ipsa veritatis accusantium iure corrupti nihil nostrum quae maiores nobis?</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni.</p>',
             },
-        },
+        ],
     },
 
     bottom: {

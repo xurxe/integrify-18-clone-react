@@ -2,9 +2,9 @@ import React from "react";
 
 import "./read-more-button.css";
 
-const ReadMoreButton = ({data}) => (
-    <a href={data.url} className="read-more-button">
-        {data.text}
+const ReadMoreButton = ({item}) => (
+    <a href={item.url} className="read-more-button">
+        {item.text}
     </a>
 );
 

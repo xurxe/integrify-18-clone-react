@@ -5,23 +5,23 @@ import "./feature-div.css";
 
 import ReadMoreButton from "./read-more-button";
 
-const FeatureDiv = ({data}) => (
+const FeatureDiv = ({item}) => (
     <div className="feature-div">
         <div className="icon-div">
             <div className="circle-div"> 
-                {Parser(data.img)} 
+                {Parser(item.img)} 
             </div>
         </div>
 
         <h3> 
-            {Parser(data.title)}
+            {Parser(item.title)}
         </h3>
 
         <p>
-            {data.content}
+            {item.content}
         </p>
 
-        <ReadMoreButton data={data.button}></ReadMoreButton>
+        <ReadMoreButton item={item.button}></ReadMoreButton>
     </div>
 );
 

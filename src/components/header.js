@@ -18,7 +18,7 @@ const Header = () => (
 
             <p>{Parser(subtitle)}</p>
 
-            <BlueButton data={button}></BlueButton>
+            <BlueButton item={button}></BlueButton>
         </div>
     </header>
 );

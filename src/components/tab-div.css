@@ -1,4 +1,4 @@
-.content {
+.tab-div-content {
     margin-top: var(--short-length);
     padding: var(--short-length);
     width: 100%;
@@ -8,30 +8,7 @@
     top: 30px;
 }
 
-.tab {
+.tab-div {
     float: left;
     height: 100%;
-}
-
-.checkboxtab {
-	display: none;
-}
-
-.tab label {
-    padding: var(--short-length);
-    background-color: #ffffff88;
-    position: relative;
-    top: var(--short-length);
-}
-
-.checkboxtab:checked ~ label {
-    background: white;
-    border-bottom: 1px solid white;
-    box-shadow: 0.5rem 0 2rem -1rem; 
-}
-
-.checkboxtab:checked ~ .content {
-    background: white;
-    box-shadow: 2rem 0 8rem -4rem; 
-	z-index: 1;
 }

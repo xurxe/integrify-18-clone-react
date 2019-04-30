@@ -13,7 +13,7 @@ const Main = () => (
     <main>
         <div id="mainA" className="content1">
             {data.section1.content.map(
-                (item) => <FeatureDiv key={item.key} data={item}></FeatureDiv>)
+                (item) => <FeatureDiv key={item.key} item={item}></FeatureDiv>)
             }
         </div>
 
@@ -24,7 +24,7 @@ const Main = () => (
         <div id="mainC">
             <div className="content2">
                 {data.section2.content.map(
-                    (item) => <BlogDiv key={item.key} data={item}></BlogDiv>)
+                    (item) => <BlogDiv key={item.key} item={item}></BlogDiv>)
                 }
             </div>
 
@@ -34,7 +34,7 @@ const Main = () => (
 
             <div className="content3">
                 {data.section3.content.map(
-                    (item) => <TestimonialDiv key={item.key} data={item}></TestimonialDiv>)
+                    (item) => <TestimonialDiv key={item.key} item={item}></TestimonialDiv>)
                 }
             </div>
 

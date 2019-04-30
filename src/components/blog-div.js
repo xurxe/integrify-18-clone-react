@@ -2,17 +2,17 @@ import React from "react";
 
 import "./blog-div.css";
 
-const BlogDiv = ({data}) => (
-    <a href={data.url} className="blog-div">
+const BlogDiv = ({item}) => (
+    <a href={item.url} className="blog-div">
         <div className="blog-thumbnail-div">
-            <img className="blog-thumbnail-img" src={data.img} alt={data.alt} />
+            <img className="blog-thumbnail-img" src={item.img} alt={item.alt} />
         </div>
         <div className="blog-snippet-div">
             <h5>
-                {data.title}
+                {item.title}
             </h5>
             <p>
-                {data.content}
+                {item.content}
             </p>
         </div>
     </a>

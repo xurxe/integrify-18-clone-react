@@ -4,12 +4,12 @@ import Parser from "html-react-parser";
 import "./top-div.css";
 import WhiteButton from "./white-button";
 
-const TopDiv = ({data}) => (
+const TopDiv = ({item}) => (
     <div id="top-div">
         <h2>
-            {Parser(data.title)}
+            {Parser(item.title)}
         </h2>
-        <WhiteButton data={data.button}></WhiteButton>
+        <WhiteButton item={item.button}></WhiteButton>
     </div>
 );
 

@@ -19,20 +19,20 @@ const InfoDiv = () => (
         <div className="tweets-div">
             <h5>{data.latestTweets.title}</h5>
             {data.latestTweets.content.map(
-                (tweet) => <TweetP key={tweet.key} data={tweet}></TweetP>)
+                (item) => <TweetP key={item.key} item={item}></TweetP>)
             }
         </div>
         <div className="posts-div">
             <h5>{data.latestPosts.title}</ h5>
             {data.latestPosts.content.map(
-                (post) => <BlogLink key={post.key} data={post}></BlogLink>)
+                (item) => <BlogLink key={item.key} item={item}></BlogLink>)
             }
         </div>
         <div className="flickr-div">
             <h5>{data.flickr.title}</h5>
             <div className="flickr-image-grid">
             {data.flickr.content.map(
-                (image) => <FlickrImageDiv key={image.key} data={image}></FlickrImageDiv>)
+                (item) => <FlickrImageDiv key={item.key} item={item}></FlickrImageDiv>)
             }
             </div>
         </div>

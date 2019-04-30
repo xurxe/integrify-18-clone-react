@@ -19,7 +19,7 @@ const TabDivDefaultChecked = (props) => (
             <p>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni."
             </p>
-            <BlueButton data={data.header.button}></BlueButton> {/* fix */}
+            <BlueButton item={data.header.button}></BlueButton> {/* fix */}
         </div>
     </div>
 );

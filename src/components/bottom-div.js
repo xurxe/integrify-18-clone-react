@@ -5,12 +5,12 @@ import "./bottom-div.css";
 
 import WhiteButton from "./white-button";
 
-const BottomDiv = ({data}) => (
+const BottomDiv = ({item}) => (
     <div id="bottom-div">
         <h2>
-            {Parser(data.title)}
+            {Parser(item.title)}
         </h2>
-        <WhiteButton data={data.button}></WhiteButton>
+        <WhiteButton item={item.button}></WhiteButton>
     </div>
 )
 

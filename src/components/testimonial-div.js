@@ -1,13 +1,13 @@
 import React from "react";
 import "./testimonial-div.css";
 
-const TestimonialDiv = ({data}) => (
+const TestimonialDiv = ({item}) => (
     <div className="testimonial-div">
         <h5>
-            {data.name}
+            {item.name}
         </h5>
         <p>
-            &ldquo;{data.content}&rdquo;
+            &ldquo;{item.content}&rdquo;
         </p>
     </div>
 );

@@ -17,12 +17,12 @@ const LayoutDiv = () => (
         <div className="grey-darker-background"></div>
 
         <Header></Header>
-        <TopDiv data={data.top}></TopDiv>
+        <TopDiv item={data.top}></TopDiv>
         <div className="stripe-background"></div>
 
         <Main></Main>
 
-        <BottomDiv data={data.bottom}></BottomDiv>
+        <BottomDiv item={data.bottom}></BottomDiv>
         <InfoDiv></InfoDiv>
         <Footer></Footer>
     </div>

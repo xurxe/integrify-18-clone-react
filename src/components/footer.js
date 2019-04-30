@@ -14,7 +14,7 @@ const Footer = () => (
 
         <div className="social-media-div">
             {data.footer.socialMedia.map(
-                (item) => <SocialMediaA key={item.name} data={item}></SocialMediaA>)
+                (item) => <SocialMediaA key={item.name} item={item}></SocialMediaA>)
             }
         </div>
     </footer>

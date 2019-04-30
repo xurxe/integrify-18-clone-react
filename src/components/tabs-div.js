@@ -1,15 +1,15 @@
 import React from "react";
+
 import "./tabs-div.css";
+import data from "../data";
+
 import TabDiv from "./tab-div";
-import TabDivDefaultChecked from "./tab-div--defaultChecked";
 
-const TabsDiv = (props) => (
-    <div className="tabs">
-        <TabDivDefaultChecked id="checkbox1" title="Design" h5="The Design">
-        </TabDivDefaultChecked>
-
-        <TabDiv id="checkbox2" title="Production" h5="The Production">
-        </TabDiv>
+const TabsDiv = () => (
+    <div className="tabsDiv">
+        {data.section4.content.map(
+            (item) => <TabDiv key={item.key} item={item}></TabDiv>)
+        }
     </div>
 );
 

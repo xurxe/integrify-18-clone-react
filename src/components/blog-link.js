@@ -2,10 +2,10 @@ import React from "react";
 
 import "./blog-link.css";
 
-const BlogLink = ({data}) => (
+const BlogLink = ({item}) => (
     <div>
-        <a href={data.url} className="blog-link">
-            {data.title}
+        <a href={item.url} className="blog-link">
+            {item.title}
         </a>
         
         <hr />
