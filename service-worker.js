@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/integrify-18-clone-react/precache-manifest.23d95b4df1d9e414971b6460ffdf38d2.js"
+  "/integrify-18-clone-react/precache-manifest.f9632564336564963bc46f650d6bcc81.js"
 );
 
 self.addEventListener('message', (event) => {
