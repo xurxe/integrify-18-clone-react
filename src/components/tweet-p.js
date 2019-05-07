@@ -4,7 +4,9 @@ import Parser from "html-react-parser";
 import "./tweet-p.css";
 
 const TweetP = ({item}) => (
-    <p className="tweet-p">
+    <p 
+    className="tweet-p">
+
         <b>
             {item.username}
         </b>
@@ -12,7 +14,10 @@ const TweetP = ({item}) => (
         {Parser(item.content)} 
 
         <br /> 
-        <span className="smaller-italic">
+
+        <span 
+        className="smaller-italic">
+        
             about
             <b>
                 {item.timestamp}

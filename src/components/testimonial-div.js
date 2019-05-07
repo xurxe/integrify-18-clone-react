@@ -2,7 +2,9 @@ import React from "react";
 import "./testimonial-div.css";
 
 const TestimonialDiv = ({item}) => (
-    <div className="testimonial-div">
+    <div 
+    className="testimonial-div">
+
         <h5>
             {item.name}
         </h5>
@@ -10,6 +12,7 @@ const TestimonialDiv = ({item}) => (
         <p>
             &ldquo;{item.content}&rdquo;
         </p>
+        
     </div>
 );
 

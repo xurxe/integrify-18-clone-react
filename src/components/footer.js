@@ -8,14 +8,23 @@ import SocialMediaA from "./social-media-a";
 
 const Footer = () => (
     <footer>
+
         <p>
             {Parser(data.footer.copyright)}
         </p>
 
-        <div className="social-media-div">
+        <div 
+        className="social-media-div">
+
             {data.footer.socialMedia.map(
-                (item) => <SocialMediaA key={item.id} item={item}></SocialMediaA>
+                (item) => (
+                    <SocialMediaA 
+                    key={item.id} 
+                    item={item}>
+                    </SocialMediaA>
+                )
             )}
+
         </div>
     </footer>
 );

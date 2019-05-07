@@ -9,12 +9,17 @@ import WhiteButton from "./white-button";
 const {title, button} = data.bottom;
 
 const BottomDiv = () => (
-    <div id="bottom-div">
+    <div 
+    id="bottom-div">
+
         <h2>
             {Parser(title)}
         </h2>
         
-        <WhiteButton item={button}></WhiteButton>
+        <WhiteButton 
+        item={button}>
+        </WhiteButton>
+        
     </div>
 );
 

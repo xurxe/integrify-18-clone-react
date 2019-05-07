@@ -3,8 +3,12 @@ import React from "react";
 import "./blue-button.css";
 
 const BlueButton = ({item}) => (
-    <a href={item.url} className="blue-button">
+    <a 
+    className="blue-button"
+    href={item.url}>
+
         {item.text}
+        
     </a>
 );
 

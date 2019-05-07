@@ -7,7 +7,9 @@ import data from "../data";
 import BlueButton from "./blue-button";
 
 const TabDivTabs = ({items}) => (
-    <div className="tab-div-tabs">
+    <div 
+    className="tab-div-tabs">
+
         {items.map(
             (item) => (
                 <button 
@@ -23,7 +25,9 @@ const TabDivTabs = ({items}) => (
 );
 
 const TabDivContent = ({item}) => (
-    <div className={"tab-div-content "  + item.class}>
+    <div 
+    className={"tab-div-content "  + item.class}>
+
         <div>
             <h5>
                 {item.title}
@@ -32,18 +36,30 @@ const TabDivContent = ({item}) => (
             {Parser(item.content)}
         </div>
         
-        <BlueButton item={data.header.button}></BlueButton>
+        <BlueButton 
+        item={data.header.button}>
+        </BlueButton>
+
     </div>
 );
 
 const TabsDiv = () => (
-    <div className="tabs-div">
-        <TabDivTabs items={data.section4.content}></TabDivTabs>
+    <div 
+    className="tabs-div">
+
+        <TabDivTabs 
+        items={data.section4.content}>
+        </TabDivTabs>
         
-        <div className="tab-div">
+        <div 
+        className="tab-div">
+
             {data.section4.content.map(
                 (item) => (
-                    <TabDivContent key={item.id} item={item}></TabDivContent>
+                    <TabDivContent 
+                    key={item.id} 
+                    item={item}>
+                    </TabDivContent>
                 )
             )}
         </div>

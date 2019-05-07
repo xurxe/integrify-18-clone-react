@@ -4,8 +4,12 @@ import "./blog-link.css";
 
 const BlogLink = ({item}) => (
     <div>
-        <a href={item.url} className="blog-link">
+        <a 
+        className="blog-link"
+        href={item.url}>
+        
             {item.title}
+            
         </a>
         
         <hr />

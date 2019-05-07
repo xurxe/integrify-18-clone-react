@@ -11,38 +11,79 @@ import TabsDiv from "./tabs-div";
 
 const Main = () => (
     <main>
-        <div id="mainA" className="content1">
+        <div 
+        id="mainA" 
+        className="content1">
+        
             {data.section1.content.map(
-                (item) => <FeatureDiv key={item.id} item={item}></FeatureDiv>
+                (item) => (
+                    <FeatureDiv 
+                    key={item.id} 
+                    item={item}>
+                    </FeatureDiv>
+                )
             )}
         </div>
 
-        <div id="mainB" className="title2">
-            <TitleDiv title={data.section2.title}></TitleDiv>
+        <div 
+        id="mainB" 
+        className="title2">
+
+            <TitleDiv 
+            title={data.section2.title}>
+            </TitleDiv>
+
         </div>
 
-        <div id="mainC">
-            <div className="content2">
+        <div 
+        id="mainC">
+
+            <div 
+            className="content2">
+
                 {data.section2.content.map(
-                    (item) => <BlogDiv key={item.id} item={item}></BlogDiv>
+                    (item) => (
+                        <BlogDiv 
+                        key={item.id} 
+                        item={item}>
+                        </BlogDiv>
+                    )
                 )}
+
             </div>
 
-            <div className="title3">
-                <TitleDiv title={data.section3.title}></TitleDiv>
+            <div 
+            className="title3">
+
+                <TitleDiv 
+                title={data.section3.title}>
+                </TitleDiv>
+
             </div>
 
-            <div className="content3">
+            <div 
+            className="content3">
+
                 {data.section3.content.map(
-                    (item) => <TestimonialDiv key={item.id} item={item}></TestimonialDiv>
+                    (item) => (
+                        <TestimonialDiv 
+                        key={item.id} 
+                        item={item}>
+                        </TestimonialDiv>
+                    )
                 )}
+
             </div>
 
-            <div className="title4">
-                <TitleDiv title={data.section4.title}></TitleDiv>
+            <div 
+            className="title4">
+                <TitleDiv 
+                title={data.section4.title}>
+                </TitleDiv>
             </div>
             
-            <div className="content4">
+            <div 
+            className="content4">
                 <TabsDiv></TabsDiv>
             </div>
         </div>

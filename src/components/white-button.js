@@ -3,7 +3,10 @@ import React from "react";
 import "./white-button.css";
 
 const WhiteButton = ({item}) => (
-    <a href={item.url} className="white-button">
+    <a 
+    className="white-button"
+    href={item.url}>
+    
         {item.text}
     </a>
 );

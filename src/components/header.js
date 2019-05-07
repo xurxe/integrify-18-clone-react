@@ -10,10 +10,19 @@ const {img, alt, title, subtitle, button} = data.header;
 
 const Header = () => (
     <header>
-        <div className="header-image-div">
-            <img src={img} alt={alt} />
+
+        <div 
+        className="header-image-div">
+
+            <img 
+            src={img} 
+            alt={alt} />
+
         </div>
-        <div className="header-text-div">
+
+        <div 
+        className="header-text-div">
+
             <h1>
                 {Parser(title)}
             </h1>
@@ -22,7 +31,10 @@ const Header = () => (
                 {Parser(subtitle)}
             </p>
 
-            <BlueButton item={button}></BlueButton>
+            <BlueButton 
+            item={button}>
+            </BlueButton>
+            
         </div>
     </header>
 );

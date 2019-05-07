@@ -3,8 +3,12 @@ import React from "react";
 import "./read-more-button.css";
 
 const ReadMoreButton = ({item}) => (
-    <a href={item.url} className="read-more-button">
+    <a 
+    className="read-more-button"
+    href={item.url}>
+
         {item.text}
+        
     </a>
 );
 

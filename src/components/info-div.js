@@ -9,8 +9,12 @@ import BlogLink from "./blog-link";
 import FlickrImageDiv from "./flickr-image-div";
 
 const InfoDiv = () => (
-    <div id="info-div">
-        <div className="about-div">
+    <div 
+    id="info-div">
+
+        <div 
+        className="about-div">
+
             <h5>
                 {data.aboutUs.title}
             </h5>
@@ -21,37 +25,61 @@ const InfoDiv = () => (
 
             <p>
                 {Parser(data.aboutUs.content.address)}
-            </p>   
+            </p>  
+
         </div>
 
-        <div className="tweets-div">
+        <div 
+        className="tweets-div">
+
             <h5>
                 {data.latestTweets.title}
             </h5>
 
             {data.latestTweets.content.map(
-                (item) => <TweetP key={item.id} item={item}></TweetP>
+                (item) => (
+                    <TweetP 
+                    key={item.id} 
+                    item={item}>
+                    </TweetP>
+                )
             )}
+
         </div>
-        <div className="posts-div">
+
+        <div 
+        className="posts-div">
+
             <h5>
                 {data.latestPosts.title}
             </ h5>
 
             {data.latestPosts.content.map(
-                (item) => <BlogLink key={item.id} item={item}></BlogLink>
+                (item) => (
+                    <BlogLink 
+                    key={item.id} 
+                    item={item}>
+                    </BlogLink>
+                )
             )}
         </div>
-        <div className="flickr-div">
+
+        <div 
+        className="flickr-div">
+
             <h5>
                 {data.flickr.title}
             </h5>
 
-            <div className="flickr-image-grid">
+            <div 
+            className="flickr-image-grid">
 
-            {data.flickr.content.map(
-                (item) => <FlickrImageDiv key={item.id} item={item}></FlickrImageDiv>
-            )}
+                {data.flickr.content.map(
+                    (item) => (
+                        <FlickrImageDiv key={item.id} item={item}></FlickrImageDiv>
+                    )
+                )}
+                
             </div>
         </div>
     </div>
