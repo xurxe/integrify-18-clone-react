@@ -30,7 +30,7 @@ const InfoDiv = () => (
             </h5>
 
             {data.latestTweets.content.map(
-                (item) => <TweetP key={item.key} item={item}></TweetP>
+                (item) => <TweetP key={item.id} item={item}></TweetP>
             )}
         </div>
         <div className="posts-div">
@@ -39,7 +39,7 @@ const InfoDiv = () => (
             </ h5>
 
             {data.latestPosts.content.map(
-                (item) => <BlogLink key={item.key} item={item}></BlogLink>
+                (item) => <BlogLink key={item.id} item={item}></BlogLink>
             )}
         </div>
         <div className="flickr-div">
@@ -50,7 +50,7 @@ const InfoDiv = () => (
             <div className="flickr-image-grid">
 
             {data.flickr.content.map(
-                (item) => <FlickrImageDiv key={item.key} item={item}></FlickrImageDiv>
+                (item) => <FlickrImageDiv key={item.id} item={item}></FlickrImageDiv>
             )}
             </div>
         </div>

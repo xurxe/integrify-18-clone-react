@@ -22,7 +22,7 @@ let data = {
         title: 'Features',
         content: [
             {
-                key: 0,
+                id: 0,
                 title: '<b>Superbly</b> responsive',
                 content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum, lorem at luctus placerat.',
                 img: '<i className="fas fa-mobile-alt"></i>',
@@ -32,7 +32,7 @@ let data = {
                 },
             },
             {
-                key: 1,
+                id: 1,
                 title: '<b>Squeeky</b> clean',
                 content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas suspendisse.',
                 img: '<i className="fas fa-desktop"></i>',
@@ -42,7 +42,7 @@ let data = {
                 },
             },
             {
-                key: 2,
+                id: 2,
                 title: '<b>Multi</b> purpose',
                 content: 'Aenean at leo eros. Praesent pretium lacus at pellentesque eleifend. Quisque a felis scelerisque leo elementum.',
                 img: '<i className="fas fa-laptop"></i>',
@@ -52,7 +52,7 @@ let data = {
                 },
             },
             {
-                key: 4,
+                id: 3,
                 title: '<b>Highly</b> flexible',
                 content: 'Ut ultrices turpis ut sem suscipit pellentesque. Aenean sed mollis felis. Suspendisse nunc nibh, vulputate id vulputate.',
                 img: '<i className="fas fa-recycle"></i>',
@@ -68,7 +68,7 @@ let data = {
         title: 'Recent work',
         content: [
             {
-                key: 0,
+                id: 4,
                 title: 'Blogitty',
                 content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacinia volutpat hendrerit. Donec libero erat, cursus ut est quis, dictum...',
                 img: '',
@@ -76,7 +76,7 @@ let data = {
                 url: '/',
             },
             {
-                key: 1,
+                id: 5,
                 title: 'Blogus',
                 content: 'Pellentesque nec turpis leo. Integer sit amet ante non lectus sollicitudin posuere. Sed commodo ut enim at scelerisque facilisi...',
                 img: '',
@@ -84,7 +84,7 @@ let data = {
                 url: '/',
             },
             {
-                key: 2,
+                id: 6,
                 title: 'Blogarino',
                 content: 'Suspendisse fermentum molestie felis, a interdum est molestie ut. Curabitur ultricies ultrices elementum. Suspendisse potenti...',
                 img: '',
@@ -98,22 +98,22 @@ let data = {
         title: 'Testimonials',
         content: [
             {
-                key: 0,
+                id: 7,
                 name: 'Jane Doe',
                 content: 'Praesent a iaculis nisi. Suspendisse non efficitur dui, sit amet pharetra mi. Etiam augue metus, dignissim ac egestas sed, gravida eu.',
             },
             {
-                key: 1,
+                id: 8,
                 name: 'Fulano de Tal',
                 content: 'Proin sagittis est augue, ut ornare orci varius sit amet. Suspendisse scelerisque lacinia cursus. Quisque nec vehicula ipsum.',
             },
             {
-                key: 2,
+                id: 9,
                 name: 'Maija Meikäläinen',
                 content: 'Aenean id nulla gravida, tincidunt turpis nec, fringilla felis. Aenean sed hendrerit libero, et ornare tellus. Quisque sed dui libero morbi non aenan scelerisque aliquet.',
             },
             {
-                key: 3,
+                id: 10,
                 name: 'Nisse i Hökarängen',
                 content: 'Sed eu aliquet lectus. Nunc sit amet est et lacus gravida faucibus interdum ac velit. Mauris et fermentum elit, et cursus metus.',
             },
@@ -124,14 +124,14 @@ let data = {
         title: 'Development',
         content: [
             {
-                key: 0,
+                id: 11,
                 tab: 'Design',
                 class: 'active',
                 title: 'The Design',
                 content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quibusdam veritatis expedita, eum temporibus inventore voluptatibus sint praesentium?</p> <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente eveniet nulla ullam, architecto sed laudantium facere officia magnam magni."</p>',
             },
             {
-                key: 1,
+                id: 12,
                 tab: 'Production',
                 class: '',
                 title: 'The Production',
@@ -160,14 +160,14 @@ let data = {
         title: 'Latest tweets',
         content: [
             {
-                key: 0,
+                id: 13,
                 username: '@Jainesh',
                 content: 'Just submitted another great item on <b>#themeforest</b>',
                 timestamp: '3 hours ago',
                 url: '/',
             },
             {
-                key: 1,
+                id: 14,
                 username: '@Jainesh',
                 content: 'Working on an awesome theme for <b>#themeforest</b>',
                 timestamp: '3 weeks ago',
@@ -180,22 +180,22 @@ let data = {
         title: 'Latest posts',
         content: [
             {
-                key: 0,
+                id: 15,
                 title: 'Lorem ipsum dolor sit amet, consect',
                 url: '/',
             },
             {
-                key: 1,
+                id: 16,
                 title: 'Sea do elusmad tempor incididunt!',
                 url: '/',
             },
             {
-                key: 2,
+                id: 17,
                 title: 'Ut labore et dolare magnar sea do elusmad tempor',
                 url: '/',
             },
             {
-                key: 3,
+                id: 18,
                 title: 'Consectetur incididunt elt, sea do?',
                 url: '/',
             },
@@ -206,42 +206,42 @@ let data = {
         title: 'Flickr',
         content: [
             {
-                key: 0,
+                id: 19,
                 img: '',
                 alt: '',
             },
             {
-                key: 1,
+                id: 20,
                 img: '',
                 alt: '',
             },
             {
-                key: 2,
+                id: 21,
                 img: '',
                 alt: '',
             },
             {
-                key: 3,
+                id: 22,
                 img: '',
                 alt: '',
             },
             {
-                key: 4,
+                id: 23,
                 img: '',
                 alt: '',
             },
             {
-                key: 5,
+                id: 24,
                 img: '',
                 alt: '',
             },
             {
-                key: 6,
+                id: 25,
                 img: '',
                 alt: '',
             },
             {
-                key: 7,
+                id: 26,
                 img: '',
                 alt: '',
             },
@@ -252,31 +252,37 @@ let data = {
         copyright: 'Copyright &copy; 2003-2012 Ventus Inc. All rights reserved.',
         socialMedia: [
             {
+                id: 27,
                 name: 'Twitter',
                 img: '<i className="fab fa-twitter-square"></i>',
                 url: 'https://twitter.com/'
             },
             {
+                id: 28,
                 name: 'Facebook',
                 img: '<i className="fab fa-facebook-square"></i>',
                 url: 'https://facebook.com/'
             },
             {
+                id: 29,
                 name: 'Vimeo',
                 img: '<i className="fab fa-vimeo-square"></i>',
                 url: 'https://vimeo.com/'
             },
             {
+                id: 30,
                 name: 'YouTube',
                 img: '<i className="fab fa-youtube-square"></i>',
                 url: 'https://youtube.com/'
             },
             {
+                id: 31,
                 name: 'Google+',
                 img: '<i className="fab fa-google-plus-square"></i>',
                 url: 'https://plus.google.com/'
             },
             {
+                id: 32,
                 name: 'Pinterest',
                 img: '<i className="fab fa-pinterest-square"></i>',
                 url: 'https://pinterest.com/'
