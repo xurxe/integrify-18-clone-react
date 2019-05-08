@@ -1,19 +1,20 @@
-import React from "react";
-import Parser from "html-react-parser";
+import React from 'react';
+import Parser from 'html-react-parser';
 
-import "./tabs-div.css";
-import data from "../data";
+import './tabs-div.css';
+import data from '../data';
 
-import BlueButton from "./blue-button";
+import BlueButton from './blue-button';
 
 const TabDivTabs = ({items}) => (
+    
     <div 
-    className="tab-div-tabs">
+    className='tab-div-tabs'>
 
         {items.map(
             (item) => (
                 <button 
-                className={"tab-div-tab " + item.class}
+                className={'tab-div-tab ' + item.class}
                 key={item.id}
                 id={item.id}
                 onClick={showTab}>
@@ -26,7 +27,7 @@ const TabDivTabs = ({items}) => (
 
 const TabDivContent = ({item}) => (
     <div 
-    className={"tab-div-content "  + item.class}>
+    className={'tab-div-content '  + item.class}>
 
         <div>
             <h5>
@@ -45,14 +46,14 @@ const TabDivContent = ({item}) => (
 
 const TabsDiv = () => (
     <div 
-    className="tabs-div">
+    className='tabs-div'>
 
         <TabDivTabs 
         items={data.section4.content}>
         </TabDivTabs>
         
         <div 
-        className="tab-div">
+        className='tab-div'>
 
             {data.section4.content.map(
                 (item) => (

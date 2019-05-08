@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import "./white-button.css";
+import './white-button.css';
 
 const WhiteButton = ({item}) => (
+    
     <a 
-    className="white-button"
+    className='white-button'
     href={item.url}>
     
         {item.text}

@@ -1,19 +1,20 @@
-import React from "react";
-import Parser from "html-react-parser";
+import React from 'react';
+import Parser from 'html-react-parser';
 
-import "./feature-div.css";
+import './feature-div.css';
 
-import ReadMoreButton from "./read-more-button";
+import ReadMoreButton from './read-more-button';
 
 const FeatureDiv = ({item}) => (
+    
     <div 
-    className="feature-div">
+    className='feature-div'>
 
         <div 
-        className="icon-div">
+        className='icon-div'>
 
             <div 
-            className="circle-div"> 
+            className='circle-div'> 
                 {Parser(item.img)} 
             </div>
 

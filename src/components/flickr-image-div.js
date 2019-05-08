@@ -1,9 +1,10 @@
-import React from "react";
-import "./flickr-image-div.css";
+import React from 'react';
+import './flickr-image-div.css';
 
 const FlickrImageDiv = ({item}) => (
+    
     <div 
-    className="flickr-image-div">
+    className='flickr-image-div'>
 
         <img 
         src={item.src} 

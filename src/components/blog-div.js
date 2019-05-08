@@ -1,17 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import "./blog-div.css";
+import './blog-div.css';
 
 const BlogDiv = ({item}) => (
+    
     <a 
-    className="blog-div" 
+    className='blog-div' 
     href={item.url}>
 
         <div 
-        className="blog-thumbnail-div">
+        className='blog-thumbnail-div'>
 
             <img 
-            className="blog-thumbnail-img" 
+            className='blog-thumbnail-img' 
             src={item.img} 
             alt={item.alt} 
             />
@@ -19,7 +20,7 @@ const BlogDiv = ({item}) => (
         </div>
 
         <div 
-        className="blog-snippet-div">
+        className='blog-snippet-div'>
 
             <h5>
                 {item.title}

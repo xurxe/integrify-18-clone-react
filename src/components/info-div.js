@@ -1,19 +1,20 @@
-import React from "react";
-import Parser from "html-react-parser";
+import React from 'react';
+import Parser from 'html-react-parser';
 
-import "./info-div.css";
-import data from "../data";
+import './info-div.css';
+import data from '../data';
 
-import TweetP from "./tweet-p";
-import BlogLink from "./blog-link";
-import FlickrImageDiv from "./flickr-image-div";
+import TweetP from './tweet-p';
+import BlogLink from './blog-link';
+import FlickrImageDiv from './flickr-image-div';
 
 const InfoDiv = () => (
+    
     <div 
-    id="info-div">
+    id='info-div'>
 
         <div 
-        className="about-div">
+        className='about-div'>
 
             <h5>
                 {data.aboutUs.title}
@@ -30,7 +31,7 @@ const InfoDiv = () => (
         </div>
 
         <div 
-        className="tweets-div">
+        className='tweets-div'>
 
             <h5>
                 {data.latestTweets.title}
@@ -48,7 +49,7 @@ const InfoDiv = () => (
         </div>
 
         <div 
-        className="posts-div">
+        className='posts-div'>
 
             <h5>
                 {data.latestPosts.title}
@@ -65,14 +66,14 @@ const InfoDiv = () => (
         </div>
 
         <div 
-        className="flickr-div">
+        className='flickr-div'>
 
             <h5>
                 {data.flickr.title}
             </h5>
 
             <div 
-            className="flickr-image-grid">
+            className='flickr-image-grid'>
 
                 {data.flickr.content.map(
                     (item) => (

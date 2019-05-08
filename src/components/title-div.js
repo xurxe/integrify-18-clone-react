@@ -1,12 +1,13 @@
-import React from "react";
-import "./title-div.css";
+import React from 'react';
+import './title-div.css';
 
 const TitleDiv = ({title}) => (
+    
     <div 
-    className="title-div">
+    className='title-div'>
 
         <div 
-        className="stripes">
+        className='stripes'>
         </div>
 
         <h4>
@@ -14,7 +15,7 @@ const TitleDiv = ({title}) => (
         </h4>
         
         <div 
-        className="stripes">
+        className='stripes'>
         </div>
         
     </div>

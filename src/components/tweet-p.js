@@ -1,11 +1,12 @@
-import React from "react";
-import Parser from "html-react-parser";
+import React from 'react';
+import Parser from 'html-react-parser';
 
-import "./tweet-p.css";
+import './tweet-p.css';
 
 const TweetP = ({item}) => (
+    
     <p 
-    className="tweet-p">
+    className='tweet-p'>
 
         <b>
             {item.username}
@@ -16,7 +17,7 @@ const TweetP = ({item}) => (
         <br /> 
 
         <span 
-        className="smaller-italic">
+        className='smaller-italic'>
         
             about
             <b>

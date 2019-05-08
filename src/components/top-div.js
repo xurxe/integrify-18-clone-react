@@ -1,16 +1,17 @@
-import React from "react";
-import Parser from "html-react-parser";
+import React from 'react';
+import Parser from 'html-react-parser';
 
-import "./top-div.css";
-import data from "../data";
+import './top-div.css';
+import data from '../data';
 
-import WhiteButton from "./white-button";
+import WhiteButton from './white-button';
 
 const {title, button} = data.bottom;
 
 const TopDiv = () => (
+    
     <div 
-    id="top-div">
+    id='top-div'>
 
         <h2>
             {Parser(title)}

@@ -1,9 +1,10 @@
-import React from "react";
-import "./testimonial-div.css";
+import React from 'react';
+import './testimonial-div.css';
 
 const TestimonialDiv = ({item}) => (
+    
     <div 
-    className="testimonial-div">
+    className='testimonial-div'>
 
         <h5>
             {item.name}

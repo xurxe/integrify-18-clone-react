@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import "./blog-link.css";
+import './blog-link.css';
 
 const BlogLink = ({item}) => (
+    
     <div>
         <a 
-        className="blog-link"
+        className='blog-link'
         href={item.url}>
         
             {item.title}

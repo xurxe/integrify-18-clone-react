@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import "./read-more-button.css";
+import './read-more-button.css';
 
 const ReadMoreButton = ({item}) => (
+    
     <a 
-    className="read-more-button"
+    className='read-more-button'
     href={item.url}>
 
         {item.text}
