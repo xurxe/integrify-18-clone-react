@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/integrify-18-clone-react/static/css/main.e1fbc375.chunk.css",
-    "main.js": "/integrify-18-clone-react/static/js/main.6fd379d9.chunk.js",
-    "main.js.map": "/integrify-18-clone-react/static/js/main.6fd379d9.chunk.js.map",
+    "main.css": "/integrify-18-clone-react/static/css/main.bd5eb158.chunk.css",
+    "main.js": "/integrify-18-clone-react/static/js/main.1e74c3df.chunk.js",
+    "main.js.map": "/integrify-18-clone-react/static/js/main.1e74c3df.chunk.js.map",
     "runtime~main.js": "/integrify-18-clone-react/static/js/runtime~main.266d5427.js",
     "runtime~main.js.map": "/integrify-18-clone-react/static/js/runtime~main.266d5427.js.map",
     "static/js/2.847d2588.chunk.js": "/integrify-18-clone-react/static/js/2.847d2588.chunk.js",
     "static/js/2.847d2588.chunk.js.map": "/integrify-18-clone-react/static/js/2.847d2588.chunk.js.map",
     "index.html": "/integrify-18-clone-react/index.html",
-    "precache-manifest.f9632564336564963bc46f650d6bcc81.js": "/integrify-18-clone-react/precache-manifest.f9632564336564963bc46f650d6bcc81.js",
+    "precache-manifest.a400bbeb1ec9c8f12baed8d36abf430e.js": "/integrify-18-clone-react/precache-manifest.a400bbeb1ec9c8f12baed8d36abf430e.js",
     "service-worker.js": "/integrify-18-clone-react/service-worker.js",
-    "static/css/main.e1fbc375.chunk.css.map": "/integrify-18-clone-react/static/css/main.e1fbc375.chunk.css.map"
+    "static/css/main.bd5eb158.chunk.css.map": "/integrify-18-clone-react/static/css/main.bd5eb158.chunk.css.map"
   }
 }
